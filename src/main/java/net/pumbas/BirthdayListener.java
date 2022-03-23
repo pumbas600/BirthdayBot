@@ -57,7 +57,7 @@ public class BirthdayListener extends ListenerAdapter
         "Happy birthday %s, you now have 1 less year to live",
         "Enjoy the next 24 hours %s...",
         "Happy birthday %s! May you live long enough to see Amazon delivering on the moon",
-        "Here is a hug! :people_hugging: Happy birthday %s!!!! PS: I’m broke!",
+        "Here is a hug! :people_hugging: Happy birthday %s!!!! PS: I'm broke!",
         "Today, I have gathered the courage to stand in front of you %s, look into your eyes, hold your hand and tell" +
             " you… that I am only here for the cake",
         "I didn't get you a gift or a happy birthday card, but please accept this half-assed happy birthday wish sent" +
@@ -65,7 +65,7 @@ public class BirthdayListener extends ListenerAdapter
         "May your birthday be sprinkled with fun and laughter. Have a great day %s!",
         "Happy birthday to the smartest, funniest, and most beautiful person in the world... Wait, did I say 'to'? I " +
             "mean from %s",
-        "Only if Discovery showed animals celebrating their birthdays... Yes! You’d be on television %s!",
+        "Only if Discovery showed animals celebrating their birthdays... Yes! You'd be on television %s!",
         "Happy birthday %s! May your day be more beautiful than a unicorn farting rainbows!",
         "%s, I regret to inform you that your childhood has officially EXPIRED",
         "Remember on your birthday – good wishes are far more important than presents. Happy birthday from me %s!",
@@ -77,8 +77,8 @@ public class BirthdayListener extends ListenerAdapter
         "Life is all about forgiving and forgetting. I forgot your birthday, and you can forgive me. How perfect %s"
     );
 
-    private final Random random = new Random();
     private final Map<String, Set<String>> collectedBirthdayMessages = new ConcurrentHashMap<>();
+    private final Random random = new Random();
 
     @Override
     public void onMessageReceived(@NotNull MessageReceivedEvent event) {

@@ -55,7 +55,26 @@ public class BirthdayListener extends ListenerAdapter
         "Good birth %s!",
         "Objective, survive... %s",
         "Happy birthday %s, you now have 1 less year to live",
-        "Enjoy the next 24 hours %s..."
+        "Enjoy the next 24 hours %s...",
+        "Happy birthday %s! May you live long enough to see Amazon delivering on the moon",
+        "Here is a hug! :people_hugging: Happy birthday %s!!!! PS: I’m broke!",
+        "Today, I have gathered the courage to stand in front of you %s, look into your eyes, hold your hand and tell" +
+            " you… that I am only here for the cake",
+        "I didn't get you a gift or a happy birthday card, but please accept this half-assed happy birthday wish sent" +
+            " via social media %s",
+        "May your birthday be sprinkled with fun and laughter. Have a great day %s!",
+        "Happy birthday to the smartest, funniest, and most beautiful person in the world... Wait, did I say 'to'? I " +
+            "mean from %s",
+        "Only if Discovery showed animals celebrating their birthdays... Yes! You’d be on television %s!",
+        "Happy birthday %s! May your day be more beautiful than a unicorn farting rainbows!",
+        "%s, I regret to inform you that your childhood has officially EXPIRED",
+        "Remember on your birthday – good wishes are far more important than presents. Happy birthday from me %s!",
+        "Happy birthday to a brother who I wouldn't trade for all the Nutella in the world %s",
+        "%s, I figured today would be as good a day as any to tell you that you were adopted!! Just kidding." +
+            " Happy birthday—or is it??",
+        "%s, on this day, some people will tell you that you are still a young man. Well, let me tell you" +
+            " something, those people are huge liars!",
+        "Life is all about forgiving and forgetting. I forgot your birthday, and you can forgive me. How perfect %s"
     );
 
     private final Random random = new Random();

@@ -1,5 +1,6 @@
 package net.pumbas;
 
+import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.User;
 
@@ -13,6 +14,7 @@ import nz.pumbas.halpbot.commands.annotations.Command;
 import nz.pumbas.halpbot.converters.annotations.parameter.Source;
 import nz.pumbas.halpbot.permissions.HalpbotPermissions;
 import nz.pumbas.halpbot.permissions.Permissions;
+import nz.pumbas.halpbot.utilities.Require;
 
 @Service
 public class BirthdayCommands
@@ -20,7 +22,9 @@ public class BirthdayCommands
     @Getter
     private final Map<String, String> targets = new ConcurrentHashMap<>();
 
-    @Permissions(permissions = HalpbotPermissions.BOT_OWNER)
+    @Permissions(user = Permission.ADMINISTRATOR,
+                 permissions= HalpbotPermissions.BOT_OWNER,
+                 merger = Require.ANY)
     @Command(description = "Set the birthday target")
     public String target(@Source Guild guild, User user) {
         targets.put(guild.getId(), user.getId());

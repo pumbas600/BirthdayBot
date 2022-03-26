@@ -82,3 +82,5 @@ nb-configuration.xml
 ## OS X
 ##############################
 .DS_Store
+
+!HalpBot-Core-2.0.5-all.jar
